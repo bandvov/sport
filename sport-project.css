@@ -1,0 +1,72 @@
+#nav{
+    outline: 1px solid black;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+}
+#nav .menu {
+    padding: 0 0;
+    display: flex;
+    list-style: none;    
+}
+
+
+#nav .menu  li {
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+    margin: 0 0;
+    outline: 1px solid black;
+    text-align: center;
+    line-height: 3rem;
+    background-color: white;
+}
+#nav .menu  li a{
+    padding: 0 3rem;
+    color: black;
+    justify-self: stretch;
+    text-decoration: none;
+}
+#nav .menu  li a:hover{
+    background-color: #f6f5f4;
+
+}
+#nav .menu  .matches {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+#nav .menu .matches #matches-list {
+    padding-top:1rem ;    
+    display: none;
+    transition: 1s all ease;
+}
+#nav .menu .matches:hover #matches-list {
+    display: flex;
+    transition: 1s all ease;
+}
+
+#nav .menu .matches #matches-list {
+flex-direction: column;
+list-style: none;
+text-decoration: none;
+position: absolute;
+top:3rem;
+left: -2rem;
+}
+/* main  */
+main #main-image{
+    background-image: url('http://svitolina.com/uf/news/565/dqmlpyu0aabpsb.jpglarge.jpeg');
+    height: 100vh;
+}
+
+/* footer styles  */
+footer .social-buttons{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
