@@ -14,58 +14,41 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <input class="checkbor" type="checkbox">
-                <span class="navbar-toggler"></span>
-            </button>
-                <ul class="menu">
-                    <li class=" uunderscore">
-                        <a href="#">Main</a>
-                    </li>
-                    <li class="matches">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Matches
-                        </a>
-                        <ul class="dropdown-menu relative" aria-labelledby="navbarDropdown">
-                            <li class="relative justify-center"><a class="dropdown-item uunderscore" href="#">Action</a>
-                            </li>
-                            <li class="relative"><a class="dropdown-item uunderscore" href="#">Action</a></li>
-                            <li class="relative"><a class="dropdown-item uunderscore" href="#">Action</a></li>
+        <nav id="nav">
+            <ul class="menu">
+                <li><a href="/">Main</a></li>
 
-                        </ul>
-                    </li>
-                    <li class="nav-item uunderscore">
-                        <a class="nav-link" href="#">News</a>
-                    </li>
-                    <li class="nav-item uunderscore">
-                        <a class="nav-link" href="#">Fans</a>
-                    </li>
-                    <li class="nav-item uunderscore">
-                        <a class="nav-link" href="#">Contacts</a>
-                    </li>
-                    <li class="nav-item uunderscore">
-                        <a class="nav-link" href="#">Admin</a>
-                    </li>
-                </ul>
-            </div>
-            <a class="navbar-brand" href="#">Svitolina</a>
+                <li class="matches"><a href="">Matches</a>
+                    <ul id="matches-list">
+                        <li><a href="">one</a></li>
+                        <li><a href="">two</a></li>
+                        <li><a href="">three</a></li>
+                    </ul>
+                </li>
+                <li><a href="/news">News</a></li>
+                <li><a href="/fans">Fans</a></li>
+                <li><a href="/contacts">Contacts</a></li>
+                <li><a href="/admin">Admin</a></li>
+                <li><a href="/">Svitolina</a></li>
+
+            </ul>
+
         </nav>
     </header>
-    <main class="container">
+    <main>
         <div id="main-image">
             <p> Аліна Світоліна <br>українська тенісистка<br> третя ракетка світу в рейтингу WTA <br> у 2017, 2018 і
                 2019 роках
             </p>
         </div>
         <section>
-            <div class="card d-flex flex-row margin-top-1" style="width: 100%;">
-                <img class="card-img-left col-sm-4"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Svitolina_RG19_%2816%29_%2848199019751%29.jpg/500px-Svitolina_RG19_%2816%29_%2848199019751%29.jpg"
-                    alt="Card image cap">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Біографія</h5>
-                    <p class="card-text ">українська тенісистка, третя ракетка світу в рейтингу WTA у 2017, 2018 і
+            <div id="bio-container">
+                <div class="bio-content">
+                    <img class=""
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Svitolina_RG19_%2816%29_%2848199019751%29.jpg/500px-Svitolina_RG19_%2816%29_%2848199019751%29.jpg"
+                        alt="Card image cap">
+                    <h5>Біографія</h5>
+                    <p>українська тенісистка, третя ракетка світу в рейтингу WTA у 2017, 2018 і
                         2019 роках. Чемпіонка
                         підсумкового турніру WTA Finals 2018 року. Виграла 13 турнірів WTA в одиночному розряді та
                         два —
