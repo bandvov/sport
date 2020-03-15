@@ -1,0 +1,99 @@
+header {
+    position: fixed;
+    background: red;
+    color: #fff;
+    width: 100%
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+header nav li {
+    display: inline-block;
+    padding: 1rem;
+}
+
+header nav li a {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+header nav li ul {
+    display: none;
+}
+
+.matches:hover ul {
+    display: block;
+}
+
+.matches:hover #matches-list{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background: blue;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    width: 10rem;
+}
+
+.toggler {
+    display: none;
+}
+
+header nav [type="checkbox"] {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .toggler {
+        display: block;
+    }
+
+    .toggler:before {
+        display: block;
+        content: "*";
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    header nav li {
+        outline: 1px dotted green;
+    }
+
+    
+    .matches:hover #matches-list{
+        position: static;
+        width: 100%;
+    }
+
+    header nav [type="checkbox"]:checked + label {
+        width: 100%;
+    }
+
+    header nav [type="checkbox"]:checked + label > ul {
+        display: flex;
+        width:100%;
+        padding: 0;
+    }
+
+    header nav [type="checkbox"]:checked #matches-list
+    {
+        width: 100%;
+        align-items: stretch;
+    }
+
+}
